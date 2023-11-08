@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'EvelethClean';
+    src: url('fonts/eveleth_clean_regular-webfont.woff2') format('woff2'),
+         url('fonts/eveleth_clean_regular-webfont.woff') format('woff');
+}
+
+/* Header and Navbar */
+
+.mainHeader {
+    background-color: black;
+    color:aliceblue;
+  
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  margin: 15px;
+  background: #333;
+}
+
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 200px;
+  }
+  .nav-menu.show {
+    display: flex;
+  }
+}
+
+.language{
+    text-align: center;
+    display: block;
+    padding-top: 1px;
+}
+
+#fontLanguege{
+    font-size: small;
+}
+
+nav{
+    font-family: EvelethClean;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    display: flex;
+}
+
+.LogoFont{
+    font-size:xx-large;
+}
+
+.navContainer{
+  max-width: 1300;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+header ul {
+  align-items: center;
+  vertical-align: middle;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.baner img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+/* Texts */
+
+h1, h2, h3{
+    font-family: EvelethClean;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+main h3{
+  font-size: small;
+  color: dimgray;
+  padding: unset;
+}
+p, h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5{
+  font-size: 10px;
+  color: dimgray;
+  padding: unset;
+  font-family: "droid_sans",verdana,sans-serif;
+}
+
+
+/* Line */
+
+hr{
+  border: 0;
+  height: 5px;
+  border-radius: 8px;
+  background-color: #0073ab;
+  margin-top: 10px;
+  margin-bottom: -25px;
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+/* delivery And pickup */
+.deliveryAndpickup{
+  display: flex;
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content:center;
+  
+}
+
+.deliveryAndpickup a{
+ color: aliceblue;
+ text-decoration: none;
+}
+
+.delivery{
+  width: 18%;
+  margin-bottom: 30px;
+  justify-content:center;
+  text-align: center;
+  background-color: #0073ab;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.pickup{
+  width: 18%;
+  margin-bottom: 30px;
+  justify-content:center;
+  text-align: center;
+  background-color: #e3002f;
+  border-radius: 5px;
+}
+
+.contacts{
+  flex-basis: 22%;
+  margin-bottom: 30px;
+  justify-content:center;
+}
+
+/* Cards */
+.card-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row, .lists, .socoalMedia{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  margin-top: 70px;
+  margin: 50px 0;
+}
+
+.offerCard{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  flex-basis: 22%;
+  margin-bottom: 30px;
+  justify-content:center;
+  text-align: center;
+}
+
+.imageOfferCard {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+  justify-content:center;
+}
+
+.offerCard h2 {
+  color:#017ab1;
+}
+
+.offerCard p {
+  font-size: 26px;
+  align-items: center;
+  font-family: "droid_sans",verdana,sans-serif;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.imageOfferCard p{
+  display:flex;
+
+  align-items: center;
+  font-size: 14px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    align-items: center;
+}
+
+.imageOfferCard{
+    width: 30%
+}
+
+/* Buttons */
+
+.smallRedButton{
+  display: inline-block;
+  background: #e3002f;
+  color: aliceblue;
+  padding: 10px 30 px;
+  margin: 10px 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+.bigRedButton{
+  display: inline-block;
+  background: #e3002f;
+  color: aliceblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px 10px 7px 10px;
+  margin: 2px;
+  text-align: center;
+}
+
+button{
+  border-style:none;
+  padding-block: 3px;
+  padding-inline: 6px;
+  border-radius: 5px;
+}
+
+.bigBlueButton{
+  display: inline-block;
+  background: #017ab1;
+  color: aliceblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 7px 10px 7px 10px;
+  margin: 2px;
+  text-align: center;
+}
+
+.bigBlueButtonregisterNow{
+  display: inline-block;
+  background: #017ab1;
+  color: aliceblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  width: auto;
+  padding: 7px 10px 7px 10px;
+  margin: 2px;
+  text-align: center;
+}
+
+.smallRedButton:hover{
+  background: #aa082a;
+}
+
+.bigRedButton:hover{
+  background: #aa082a;
+}
+
+.bigBlueButton:hover{
+  background: #06587d;
+}
+
+/* App */
+#app{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: radial-gradient(#bfebff, #017ab1);
+  padding-bottom: 20px;
+}
+
+.col-2{
+  color: aliceblue;
+}
+
+.subscribe{
+  text-align: center;
+}
+
+/* culumns */
+.columns{
+  display: flex;
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  flex-wrap: wrap;
+}
+
+.subcolumn{
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Histery */
+.history{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px; 
+  text-align: center;
+}
+
+/* Footer */
+
+footer{
+  text-align: center;
+}
+
+.socialMedia{
+  flex-direction: row;
+}
+
+footer ul {
+  align-items: center;
+  vertical-align: middle;
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+footer li a {
+  display: block;
+  color: #454545;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  font-size: 16px;
+}
+
+.apps{
+  border-right-color: #a9a9a9;
+  border-right-style: groove;
+  border-right-width: thin;
+  height: 30%;
+  padding-right: 20px;
+}
+
+.sm{
+  padding-left: 20px;
+}
+
+
