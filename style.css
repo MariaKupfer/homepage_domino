@@ -4,80 +4,32 @@
          url('fonts/eveleth_clean_regular-webfont.woff') format('woff');
 }
 
-/* Header and Navbar */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, body, footer{
+  width: clamp(500px, 1080);
+}
+
+
+/* Language */
 
 .mainHeader {
     background-color: black;
     color:aliceblue;
-  
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  margin: 15px;
-  background: #333;
-}
-
-
-.bar {
-  width: 30px;
-  height: 4px;
-  background: #fff;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #333;
-    width: 200px;
-  }
-  .nav-menu.show {
-    display: flex;
-  }
 }
 
 .language{
-    text-align: center;
-    display: block;
-    padding-top: 1px;
+  text-align: center;
+  display: block;
+  padding-top: 2px;
+  font-size: small;
 }
 
-#fontLanguege{
-    font-size: small;
-}
-
-nav{
-    font-family: EvelethClean;
-    justify-content: center;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    display: flex;
-}
-
-.LogoFont{
-    font-size:xx-large;
-}
-
-.navContainer{
-  max-width: 1300;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
+/* Navigation */
 header ul {
   align-items: center;
   vertical-align: middle;
@@ -99,11 +51,68 @@ header li a {
   text-decoration: none;
 }
 
+.navbar{
+  font-family: EvelethClean;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: clamp(768px, 1080, 1080);
+  margin: auto;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 45px;
+      background-color: #000000;
+      padding: 10px;
+      width: calc(100% - 70px);
+  }
+
+  .nav-menu.show {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+}
+
+.LogoFont{
+    font-size:xx-large;
+}
+
+ .card-container{
+  max-width: 1080;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .baner img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Texts */
@@ -111,14 +120,14 @@ header li a {
 h1, h2, h3{
     font-family: EvelethClean;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     
 }
 
 main h3{
   font-size: small;
   color: dimgray;
-  padding: unset;
+  padding: 10px;
 }
 p, h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -190,12 +199,7 @@ hr{
 }
 
 /* Cards */
-.card-container{
-  max-width: 1080px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
+
 
 .row, .lists, .socoalMedia{
   display: flex;
