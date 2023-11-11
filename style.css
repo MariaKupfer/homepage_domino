@@ -15,9 +15,8 @@ header, body, footer{
 }
 
 
-/* Language */
-
-.mainHeader {
+/* ----------------- Language-----------------  */
+.main-header {
     background-color: black;
     color:aliceblue;
 }
@@ -29,7 +28,12 @@ header, body, footer{
   font-size: small;
 }
 
-/* Navigation */
+.logo-font{
+  font-size:xx-large;
+}
+
+
+/* ----------------- Navigation ----------------- */
 header ul {
   align-items: center;
   vertical-align: middle;
@@ -77,45 +81,34 @@ header li a {
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 45px;
-      background-color: #000000;
-      padding: 10px;
-      width: calc(100% - 70px);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    background-color: #000000;
+    padding: 10px;
+    width: calc(100% - 70px);
   }
 
   .nav-menu.show {
-      display: flex;
+    display: flex;
   }
 
   .menu-toggle {
-      display: block;
+    display: block;
+  }
+
+  .image-offer-card{
+    flex-basis: 100%;
+  }
+
+  .contacts{
+    flex-basis: 40%;
   }
 }
 
-.LogoFont{
-    font-size:xx-large;
-}
 
- .card-container{
-  max-width: 1080;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.baner img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Texts */
+/* ----------------- Texts ----------------- */
 
 h1, h2, h3{
     font-family: EvelethClean;
@@ -129,6 +122,7 @@ main h3{
   color: dimgray;
   padding: 10px;
 }
+
 p, h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -136,20 +130,18 @@ p, h4 {
 h5{
   font-size: 10px;
   color: dimgray;
-  padding: unset;
   font-family: "droid_sans",verdana,sans-serif;
 }
 
 
-/* Line */
-
+/* ----------------- Line ----------------- */
 hr{
   border: 0;
   height: 5px;
   border-radius: 8px;
   background-color: #0073ab;
   margin-top: 10px;
-  margin-bottom: -25px;
+  margin-bottom: 20px;
   max-width: 1080px;
   margin: auto;
   padding-left: 25px;
@@ -157,26 +149,22 @@ hr{
 }
 
 
-/* delivery And pickup */
-.deliveryAndpickup{
+/* ----------------- delivery And pickup ----------------- */
+.delivery-and-pickup{
   display: flex;
-  max-width: 1080px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
   justify-content:center;
-  
+  padding: 20px;
 }
 
-.deliveryAndpickup a{
+.delivery-and-pickup a{
  color: aliceblue;
  text-decoration: none;
 }
 
 .delivery{
-  width: 18%;
+  width: 200px;
+  height: 200px;
   margin-bottom: 30px;
-  justify-content:center;
   text-align: center;
   background-color: #0073ab;
   border-radius: 5px;
@@ -184,159 +172,169 @@ hr{
 }
 
 .pickup{
-  width: 18%;
+  width: 200px;
+  height: 200px;
   margin-bottom: 30px;
-  justify-content:center;
   text-align: center;
   background-color: #e3002f;
   border-radius: 5px;
 }
 
-.contacts{
-  flex-basis: 22%;
-  margin-bottom: 30px;
-  justify-content:center;
+.arrow-box{
+  display: inline-block;
+  border-radius: 30px;
+  color: #fff;
+  font-size:large;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  z-index: 99;
+  margin-top: -20px;
+  margin-left: -20px;
+  background: #006991;
+  border: #005574 2px solid;
 }
 
-/* Cards */
+#pickup{
+  background-color: #e3002f;
+  border: #aa082a 2px solid;
+}
 
+#pickup-footer{
+  background-color: #b6142c;
+}
 
-.row, .lists, .socoalMedia{
+.start-order-footer{
+  height: 40px;
+  margin-top: 40px;
+  border-radius: 0 0 5px 5px;
+  background-color: #005574;
+}
+
+/* -----------------  Cards ----------------- */
+.card-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  flex-wrap: wrap;
+}
+
+.row, .lists, .socoal-media-bar{
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 20px;
   margin-top: 70px;
-  margin: 50px 0;
 }
 
-.offerCard{
+.offer-card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   flex-basis: 22%;
   margin-bottom: 30px;
-  justify-content:center;
   text-align: center;
+  padding: 5px;
 }
 
-.imageOfferCard {
-  flex-basis: 30%;
+.image-offer-card {
+  width: 30%;
   margin-bottom: 30px;
-  justify-content:center;
 }
 
-.offerCard h2 {
+.image-offer-card img{
+  display: block;
+  padding-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.offer-card h2 {
   color:#017ab1;
 }
 
-.offerCard p {
+.offer-card p {
   font-size: 26px;
   align-items: center;
   font-family: "droid_sans",verdana,sans-serif;
   text-transform: uppercase;
   margin-top: 35px;
   margin-bottom: 35px;
+  padding: 0 2px 0 2px;
 }
 
-.imageOfferCard p{
-  display:flex;
-
-  align-items: center;
+.image-offer-card p{
   font-size: 14px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  padding: 0 2px 0 2px;
 }
-
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
-.card-container{
-    display: flex;
-    justify-content: space-around;
-    font-size: 10px;
-    align-items: center;
-}
-
-.imageOfferCard{
-    width: 30%
-}
-
-/* Buttons */
-
-.smallRedButton{
-  display: inline-block;
-  background: #e3002f;
-  color: aliceblue;
-  padding: 10px 30 px;
-  margin: 10px 0;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
-}
-
-.bigRedButton{
-  display: inline-block;
-  background: #e3002f;
-  color: aliceblue;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
-  border-radius: 3px;
-  width: 100%;
-  padding: 7px 10px 7px 10px;
-  margin: 2px;
-  text-align: center;
-}
+/*-----------------  Buttons ----------------- */
 
 button{
+  display: inline-block;
   border-style:none;
   padding-block: 3px;
   padding-inline: 6px;
   border-radius: 5px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.bigBlueButton{
-  display: inline-block;
-  background: #017ab1;
-  color: aliceblue;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
+.small-red-button{
+  background: #e3002f;
+  padding: 10px 30 px;
+  margin: 10px 0;
+}
+
+.big-red-button{
+  background: #e3002f;
   width: 100%;
   padding: 7px 10px 7px 10px;
   margin: 2px;
-  text-align: center;
 }
 
-.bigBlueButtonregisterNow{
-  display: inline-block;
+.big-blue-button{
   background: #017ab1;
-  color: aliceblue;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
+  width: 100%;
+  padding: 7px 10px 7px 10px;
+  margin: 2px;
+}
+
+.big-blue-button-register-now{
+  background: #017ab1;
   width: auto;
   padding: 7px 10px 7px 10px;
   margin: 2px;
-  text-align: center;
 }
 
-.smallRedButton:hover{
+.small-red-button:hover{
   background: #aa082a;
 }
 
-.bigRedButton:hover{
+.big-red-button:hover{
   background: #aa082a;
 }
 
-.bigBlueButton:hover{
+.big-blue-button:hover{
   background: #06587d;
 }
 
-/* App */
+/* ----------------- App ----------------- */
 #app{
   display: flex;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   background: radial-gradient(#bfebff, #017ab1);
@@ -347,11 +345,17 @@ button{
   color: aliceblue;
 }
 
+.apps-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .subscribe{
   text-align: center;
 }
 
-/* culumns */
+/*-----------------  culumns ----------------- */
 .columns{
   display: flex;
   max-width: 1080px;
@@ -367,7 +371,7 @@ button{
   margin: 5px;
 }
 
-/* Histery */
+/*-----------------  Histery ----------------- */
 .history{
   max-width: 1080px;
   margin: auto;
@@ -376,18 +380,22 @@ button{
   text-align: center;
 }
 
-/* Footer */
+/*-----------------  Footer ----------------- */
 
 footer{
   text-align: center;
 }
 
-.socialMedia{
+.contacts{
+  width: 22%;
+  margin-bottom: 30px;
+}
+
+.social-media{
   flex-direction: row;
 }
 
 footer ul {
-  align-items: center;
   vertical-align: middle;
   list-style-type: none;
   margin: 10px;
@@ -417,4 +425,33 @@ footer li a {
   padding-left: 20px;
 }
 
+/*------------ Slider ----------*/
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  max-width: 1500px;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  animation: slide 8s infinite alternate;
+}
+
+@keyframes slide {
+  0%, 50% {
+    transform: translateX(0);
+}
+55%, 100% {
+    transform: translateX(-100%);
+}
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
 

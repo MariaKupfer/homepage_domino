@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="mainHeader">
+    <header class="main-header">
         <div class="language">
             <p><img src="img/flag_gb.webp" alt="eng"> English</p>
         </div>
@@ -21,7 +21,7 @@
                 <div class="bar"></div>
             </div>
             <ul class="nav-menu">
-                <li><a href="#"><div><label class="LogoFont"> <img src="img/DominosLogo.png" alt="Logo" class="logoHeader" width="40" height="41"> Domino's</label></div></a></li>
+                <li><a href="#"><div><label class="logo-font"> <img src="img/DominosLogo.png" class="logo" width="40" height="41"> Domino's</label></div></a></li>
                 <li><a href="https://www.dominos.de/speisekarte">MENÜ</a></li>
                 <li><a href="https://www.dominos.de/gutscheine-coupons">GUTSCHEINE &</br> COUPONSt</a></li>
                 <li><a href="https://www.dominos.de/store">STORES</a></li>
@@ -29,7 +29,7 @@
                 <li><a href="https://www.dominos.de/ueber-dominos">ÜBER UNS</a></li>
                 <li><a href="https://www.dominos.de/jobs">JOBS</a></li>
                 <li><a href="https://www.dominos.de/franchisepartner">FRANCHISE</a></li>
-                <li><a href="https://bestellen.dominos.de/login"><img src="img/free_icon_1.svg" alt="eng" class="person" width="20" height="20">ANMELDEN</a></li>
+                <li><a href="https://bestellen.dominos.de/login"><img src="img/free_icon_1.svg" alt="person" class="person" width="20" height="20">ANMELDEN</a></li>
             </ul> 
         </nav>
     </header>
@@ -38,115 +38,130 @@
         <div>
             <h1>ONLINE BESTELLUNG</h1>
             <h3>Klicke unten um das Menü deines Stores zu sehen</h3>
-            <div class="deliveryAndpickup">
+
+            <div class="delivery-and-pickup">
                 <div class="delivery">
-                    <a href="https://bestellen.dominos.de/delivery-address-list" class="delivery button">
+                    <a href="https://bestellen.dominos.de/delivery-address-list">
                         <h2>Lieferung</h2>
                         <br>
-                            <img src="img/4196965851679647932.svg " alt="icon-delivery" width="55" height="55"></svg>
+                            <img src="img/bike.svg " alt="icon-delivery" width="55" height="55"></svg>
+                        <br>
                         <br>
                         <div class="start-order-footer">
-                            <div class="start-order-arrow-box">
-                                <h1>&#10141</h1>
+                            <div class="arrow-box">
+                                <p><b>&#10141</b></p1>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="pickup">
-                    <a href="https://bestellen.dominos.de/store-search" class="pickup button">
+                    <a href="https://bestellen.dominos.de/store-search">
                         <h2>Abholung</h2>
                         <br>
-                            <img src="img/3400999761602913179.svg" alt="icon-delivery" width="55" height="55"></svg>
+                            <img src="img/shop.svg" alt="icon-delivery" width="55" height="55"></svg>
                         <br>
-                        <div class="start-order-footer">
-                            <div class="start-order-arrow-box">
-                                <h1>&#10141</h1>
+                        <br>
+                        <div class="start-order-footer" id="pickup-footer">
+                            <div class="arrow-box" id="pickup">
+                                <p><b>&#10141</b></p>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </div >
-        <div class="baner">
-            <img src="img/230824_website_desktopslider_20prozent_abholung_1500x500-1.webp" alt="baner">
+
+        <div class="slider-container">
+            <div class="slider">
+                <img src="img/230824_website_desktopslider_20prozent_abholung_1500x500-1.webp">
+                <img src="img/web-app_megawoche_publicwebsite_desktopslider_1500x500.webp" alt="baner">
+            </div>
         </div> 
+
         <hr>
-        <div>
-            <h1>Store Angebote</h1>
-        </div>
+
+        <h1>Store Angebote</h1>
 
         <div class="card-container">
             <div class="row"> 
-                <div class="offerCard" id="card1">
+                <div class="offer-card">
                     <h2> Liferung </h2>
                     <p> 1 PIZZA/PASTA </br>+ 1 SNACK </br> ODER DESSERT</br> AB €9.99 </p>
                     <h5> NUR IN TEILNEHMENDEN STORES. GÜLTIG BIS</br> 01-01-25. EINLÖSEBEDINGUNGEN > </h5>
-                    <button class="smallRedButton" id="odrerNow"> JETZT BESTELLEN &#11208</button>
+                    <button class="small-red-button"> JETZT BESTELLEN &#11208</button>
                 </div>
-                <div class="offerCard" id="card2">
+                <div class="offer-card">
                     <h2> Liferung </h2>
                     <p> 1 PIZZA/PASTA </br>+ 1 SNACK </br> ODER DESSERT</br> AB €9.99 </p>
                     <h5> NUR IN TEILNEHMENDEN STORES. GÜLTIG BIS</br> 01-01-25. EINLÖSEBEDINGUNGEN > </h5>
-                    <button class="smallRedButton" id="odrerNow"> JETZT BESTELLEN &#11208</button>
+                    <button class="small-red-button"> JETZT BESTELLEN &#11208</button>
                 </div>
-                <div class="offerCard" id="card3">
+                <div class="offer-card">
                     <h2> Liferung </h2>
                     <p> 1 PIZZA/PASTA </br>+ 1 SNACK </br> ODER DESSERT</br> AB €9.99 </p>
                     <h5> NUR IN TEILNEHMENDEN STORES. GÜLTIG BIS</br> 01-01-25. EINLÖSEBEDINGUNGEN > </h5>
-                    <button class="smallRedButton" id="odrerNow"> JETZT BESTELLEN &#11208</button>
+                    <button class="small-red-button"> JETZT BESTELLEN &#11208</button>
                 </div>
-                <div class="offerCard" id="card4">
+                <div class="offer-card">
                     <h2> Liferung </h2>
                     <p> 1 PIZZA/PASTA </br>+ 1 SNACK </br> ODER DESSERT</br> AB €9.99 </p>
                     <h5> NUR IN TEILNEHMENDEN STORES. GÜLTIG BIS</br> 01-01-25. EINLÖSEBEDINGUNGEN > </h5>
-                    <button class="smallRedButton" id="odrerNow"> JETZT BESTELLEN &#11208</button>
+                    <button class="small-red-button"> JETZT BESTELLEN &#11208</button>
                 </div>
-
             </div> 
         </div>
+        
         <h1>HUNGRIG NACH MEHR</h1>
+
         <div class="card-container"> 
             <div class="row">
-            <div class="imageOfferCard" id="imageCard1">
+            <div class="image-offer-card">
                 <img src="img/230606_dominosclub_mobileslider_768x768.webp" alt="eng" class="offerImage" width="300" height="300">
                 <p>JETZT REGISTRIEREN! PUNKTE SAMMELN & </br> GRATISPIZZA BEKOMMEN! </p>
-                <button class="bigBlueButton" id="registerNow"> JETZT REGISTRIEREN &#11208</button>
+                <button class="big-blue-button"> JETZT REGISTRIEREN &#11208</button>
             </div>
-            <div class="imageOfferCard" id="imageCard2">
+            <div class="image-offer-card">
                 <img src="img/230127_landingpage_slidermobile_diverse_neu_768x768.webp" alt="eng" class="offerImage" width="300" height="300">
                 <p>JETZT REGISTRIEREN! PUNKTE SAMMELN & </br> GRATISPIZZA BEKOMMEN! </p>
-                <button class="bigBlueButton" id="registerNow"> JETZT EMDECKEN &#11208</button>
+                <button class="big-blue-button"> JETZT EMDECKEN &#11208</button>
             </div>
-            <div class="imageOfferCard" id="imageCard3">
-                <img src="img/gutscheinkarte.webp" alt="eng" class="offerImage" alt="eng"  width="300" height="300">
+            <div class="image-offer-card">
+                <img src="img/gutscheinkarte.webp" alt="eng" class="offer-image" alt="eng"  width="300" height="300">
                 <p>JETZT REGISTRIEREN! PUNKTE SAMMELN & </br> GRATISPIZZA BEKOMMEN! </p>
-                <button class="bigRedButton" id="registerNow"> JETZT REGISTRIEREN &#11208</button>
-            </div>
+                <button class="big-red-button"> JETZT REGISTRIEREN &#11208</button>
             </div>
         </div>
+        </div>
+
         <div class="row" id="app">
             <div class="col-1">
-                <img src="img\dominos-app2.webp" class="phoneImage" width="200" height="405">
+                <img src="img\dominos-app2.webp" class="phone-image" width="200" height="405">
             </div>
             <div class="col-2">
                 <h1>Hunger? Keine </br> Lust zu kochen?</h1>
                 <h1>Mit der Domino's App schnell und </br>lecker Pizza & mehr bestellen und</br> 10% sparen!</h1>
                 <p> Weitere Infos zur App findest du <a href="https://www.dominos.de/app">hier</a>. </br> <b>Lad dir die Domino's App für iPhone oder Android</b></p>
-                <img src="img\download_on_the_app_store_badge_de_wht_092917.webp" class="appDownload"  width="155.38" height="57">
-                <img src="img\google-play-badge_negative.webp" class="appDownload"  width="155.38" height="57">
+                <div class="apps-icons">
+                    <img src="img\download_on_the_app_store_badge_de_wht_092917.webp" class="app-download"  width="135.38">
+                    <img src="img\google-play-badge_negative.webp" class="app-download"  width="155.38">
+                </div>
             </div>
         </div>
+
         <div class="subscribe">
             <h3>TOP DEALS UND DIE NEUSTEN DOMINO'S NEWS!</h3>
             <p>
                 Jetzt den Domino's Newsletter abonnieren und 20% Rabatt auf Pizza erhalten! 
             </p>
-            <input class="inputEmailForm" type="email" id="email" placeholder="E-Mail-Adresse">
-            <button class="bigBlueButtonregisterNow" id="registerNow"> Anmelden &#11208</button>
+            <input class="input-email-form" type="email" id="email" placeholder="E-Mail-Adresse">
+            <button class="big-blue-button-register-now" id="register-now"> Anmelden &#11208</button>
         </div>
+
         <hr>
+
+        <h1>SCHMECK DEN UNTERSCHIED</h1>
+
         <div class="history">
-            <h1>SCHMECK DEN UNTERSCHIED</h1>
             <h3>Domino's Pizza - deine Lieblingspizza seit 1960.</h3>
             <p>Frische, knusprige Pizza? Dafür brennen nicht nur unsere Öfen, sondern auch unsere Herzen! </br>
                 Wir bei Domino's haben die Vision euch täglich mit frischer & hausgemachter Pizza zu versorgen - und dies schnell & einfach. Unsere erste Pizza liegt schon weit zurück… Die Brüder Tom & James Monaghan gründeten vor mehr als 60 Jahren den ersten Domino' Pizza Store - Seitdem bemühen wir uns jeden Tag unsere Kunden mit leckerer Pizza ein Lächeln ins Gesicht zu zaubern.</p>
@@ -213,29 +228,30 @@
                 </ul>
             </div>
         </div>
+
         <p>ENGLISH VISITOR? CLICK HERE</p>
         <div class="card-container">
-            <div class="socoalMedia">
+            <div class="socoal-media-bar">
                 <div class="apps">
                     <h2> DU FINDEST UNSERE APPS UNTER </h2>
-                    <div class="appsIcons">
-                        <img src="img\download_on_the_app_store_badge_de_wht_092917.webp" class="appDownload"  width="138.45" height="45">
-                        <img src="img\google-play-badge_negative.webp" class="appDownload"  width="164.55" height="62">
+                    <div class="apps-icons">
+                        <img src="img\download_on_the_app_store_badge_de_wht_092917.webp" class="app-download"  width="138.45" height="45">
+                        <img src="img\google-play-badge_negative.webp" class="app-download"  width="164.55" height="62">
                     </div>
                 </div>
                 <div class="sm">
                     <h2> DOMINO'S AUF SOCIAL MEDIA </h2>
-                    <div class="smIcons">
-                        <img src="img\facebook_nl.png" class="iconSocialMedia"  width="44" height="40">
-                        <img src="img\instagram_nl.webp" class="iconSocialMedia"  width="44" height="40">
-                        <img src="img\youtube_nl.webp" class="iconSocialMedia"  width="44" height="40">
+                    <div class="sm-icons">
+                        <img src="img\facebook_nl.png" class="icon-social-media"  height="40">
+                        <img src="img\instagram_nl.webp" class="icon-social-media" height="40">
+                        <img src="img\youtube_nl.webp" class="icon-social-media"  height="40">
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="cookie">
             <p>DATENSCHUTZ | COOKIE EINSTELLUNGEN| WERBEEINSTELLUNGEN VERWALTEN </br> ALLGEMEINE LIEFERBEDINGUNGEN</p>
-
         </div>
         <p>Copyright © Domino's Pizza Deutschland GmbH 2023</p>
     </footer>
